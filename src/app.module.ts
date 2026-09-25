@@ -28,7 +28,7 @@ import { GenreEntity } from './genre/genre.entity';
 import { ReviewEntity } from './review/review.entity';
 import { YoutubeTrailerEntity } from './youtube-trailer/youtube-trailer.entity';
 import { PrizeEntity } from './prize/prize.entity';
-import { dataSourceOptions } from 'db/data-source';
+import { dataSourceOptions } from '../db/data-source';
 
 @Module({
   imports: [

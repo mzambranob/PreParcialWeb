@@ -109,6 +109,7 @@ describe('MovieService', () => {
       genre,
       platforms: [],
       reviews: [],
+      prizes: [],
       youtubeTrailer
     };
 
@@ -140,6 +141,7 @@ describe('MovieService', () => {
       genre: null,
       platforms: [],
       reviews: [],
+      prizes: [],
       youtubeTrailer
     };
 
@@ -160,6 +162,7 @@ describe('MovieService', () => {
       genre,
       platforms: [],
       reviews: [],
+      prizes: [],
       youtubeTrailer
     };
 
@@ -180,6 +183,7 @@ describe('MovieService', () => {
       genre,
       platforms: [],
       reviews: [],
+      prizes: [],
       youtubeTrailer: null
     };
 
@@ -206,6 +210,7 @@ describe('MovieService', () => {
       genre: nonSavedGenre,
       platforms: [],
       reviews: [],
+      prizes: [],
       youtubeTrailer
     };
 
@@ -220,7 +225,8 @@ describe('MovieService', () => {
       nationality: faker.address.country(),
       birthDate: faker.date.between('1900-01-01T00:00:00.000Z', '2000-01-01T00:00:00.000Z'),
       biography: faker.lorem.sentence(),
-      movies: []
+      movies: [],
+      prizes: []
     };
 
     const movie: MovieEntity = {
@@ -236,6 +242,7 @@ describe('MovieService', () => {
       genre,
       platforms: [],
       reviews: [],
+      prizes: [],
       youtubeTrailer
     };
 
@@ -265,6 +272,7 @@ describe('MovieService', () => {
       genre,
       platforms: [],
       reviews: [],
+      prizes: [],
       youtubeTrailer: nonSavedYoutubeTrailer
     };
 
@@ -383,7 +391,8 @@ describe('MovieService', () => {
       nationality: faker.address.country(),
       birthDate: faker.date.between('1900-01-01T00:00:00.000Z', '2000-01-01T00:00:00.000Z'),
       biography: faker.lorem.sentence(),
-      movies: []
+      movies: [],
+      prizes: []
     };
 
     const movie: MovieEntity = moviesList[0];

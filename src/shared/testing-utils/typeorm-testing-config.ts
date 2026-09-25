@@ -6,15 +6,16 @@ import { MovieEntity } from '../../movie/movie.entity';
 import { PlatformEntity } from '../../platform/platform.entity';
 import { ReviewEntity } from '../../review/review.entity';
 import { YoutubeTrailerEntity } from '../../youtube-trailer/youtube-trailer.entity';
+import { PrizeEntity } from '../../prize/prize.entity';
 
 export const TypeOrmTestingConfig = () => [
   TypeOrmModule.forRoot({
     type: 'sqlite',
     database: ':memory:',
     dropSchema: true,
-    entities: [ActorEntity, DirectorEntity, GenreEntity, MovieEntity, PlatformEntity, ReviewEntity, YoutubeTrailerEntity],
+    entities: [ActorEntity, DirectorEntity, GenreEntity, MovieEntity, PlatformEntity, ReviewEntity, YoutubeTrailerEntity, PrizeEntity],
     synchronize: true,
     keepConnectionAlive: true
   }),
-  TypeOrmModule.forFeature([ActorEntity, DirectorEntity, GenreEntity, MovieEntity, PlatformEntity, ReviewEntity, YoutubeTrailerEntity]),
+  TypeOrmModule.forFeature([ActorEntity, DirectorEntity, GenreEntity, MovieEntity, PlatformEntity, ReviewEntity, YoutubeTrailerEntity, PrizeEntity]),
 ];
